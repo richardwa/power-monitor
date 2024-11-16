@@ -5,7 +5,7 @@ from datetime import datetime
 
 def get_log_filename():
     """Generate a log filename based on the current year and month."""
-    return datetime.now().strftime("%Y-%m.log")
+    return '/data/'+datetime.now().strftime("%Y-%m.log")
 
 def log_mqtt_messages():
     """Subscribe to MQTT topics and log messages to monthly files."""
