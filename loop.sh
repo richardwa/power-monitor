@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-COMMAND='mosquitto_sub -v -t "#"'
+COMMAND='mosquitto_sub -v -t #'
 
 while true; do
     current_time=$(date +%s)
