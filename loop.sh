@@ -9,6 +9,6 @@ while true; do
     seconds_remaining=$((midnight - current_time))
     log_file="/data/power-$(date +%Y-%m-%d).log"
 
-    timeout seconds_remaining $COMMAND >> $log_file
+    timeout $seconds_remaining $COMMAND >> $log_file
     sleep 10
 done
